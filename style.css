@@ -1,0 +1,799 @@
+*{
+    font-family: Arial, sans-serif;
+}
+.homeBody{
+    background: #7e694a;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+}
+.header{
+    font-size: 2em;
+    margin: 1em;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 10%;
+}
+.header span{
+    float: right;
+}
+.homeBody .body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10%;
+    margin-top: 0;
+}
+.homeBody .body .intro, .homeBody .body .CTA{
+    width: 50%;
+}
+.homeBody .body img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2em;
+}
+.homeBody .body .intro {
+    font-size: 2.75em;
+}
+.homeBody .body .CTA {
+    margin-top: 2%;
+}
+.homeBody .body .CTA p, .homeBody .body .CTA h6 {
+    font-size: 1.25em;
+    margin: 0.5em;
+}
+.homeBody .body .CTA h5{
+    text-decoration: underline;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: lighter;
+}
+.homeBody .body .CTA .card{
+    background: #374440;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2em;
+    text-align: center;
+    border-radius: 2em;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bottom .restaurant{
+    display: flex;
+    flex-direction:row;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
+.homeBody .body .CTA .cartIcon{
+    background: #902124;
+    width:4em;
+    height:4em;
+    border-radius: 50%;
+    margin-top: 5%;
+    color: white;
+    font-size: 1.25em;
+    border: none;
+}
+.homeBody .body .CTA .cartIcon i{
+    margin-top: 1em;
+}
+.homeBody .body .next{
+    font-size: 3em;
+    height: 30%;
+    margin-top:25%;
+}
+.menuList{
+    margin-left: 55%;
+    margin-bottom: 5%;
+} 
+.card a{
+    text-decoration: none;
+    color: white;
+}
+.header .menu{
+    background: #ffffff;
+    color: #000000;
+    font-size: 0.5em;
+    padding: 0.5em;
+    width: 10em;
+    float: right;
+    border-radius: 5px;
+    display: none;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu i{
+    size: 0.5em;
+    margin-right: 0.5em;
+}
+.menu ul li{
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 0.75em;
+}
+.down{
+    display: none;
+}
+.next a{
+    text-decoration: none;
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    color: #000000;
+}
+#finish{
+    display: none;
+}
+@media only screen and (max-width: 1075px){
+    .homeBody .body .CTA .cartIcon{
+        width: 4em;
+        height: 4em;
+        
+    } 
+    .homeBody .body .CTA .cartIcon i{
+        margin-top: 0.5em;
+    }
+}
+@media only screen and (max-width: 890px){
+    .homeBody .body .intro {
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width: 620px){
+.homeBody .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10%;
+    margin-top: 0;
+}
+.homeBody .body .intro, .homeBody .body .CTA{
+    width: 95%;
+}
+.intro{
+    margin-left: 10%;
+}
+.right{
+    display: none;
+}
+.down{
+    margin-left: 95%;
+    display: block;
+    margin-top: 0;
+}
+
+}
+
+/* registration page */
+.registerBody{
+    background: #cdcbc4;
+    color: #000000;
+}
+.registerBody .header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+.registerBody .header h5{
+    margin: 0;
+}
+.searchBar{
+    border-radius: 5px;
+    width: 30%;
+    height: 1.25em;
+    /* margin-left: 15%; */
+}
+.searchBar input, .searchBar button{
+    border: none;
+    color: black;
+    margin-bottom: 0.5em;
+}
+.searchBar input{
+    width: 80%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.searchBar button{
+    width: 11%;
+    height: 100%;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.registerBody .form {
+    width: 80%;
+    margin-left: 10%;
+    background: #f2efeb;
+    color: #000000;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 1em;
+}
+
+.registerBody .formDiv{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+
+}
+.registerBody .formDiv div{
+    display: flex;
+    flex-direction: column;
+}
+.registerBody form input{
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    padding: 2em;
+    width: 12.5em;
+}
+.registerBody .form .btn{
+    background: black;
+    color: white;
+    width: 7em;
+    border-radius: 5px;
+    height: 3em;
+    padding: 0.25em;
+    margin-top: 1em;
+    margin-left: 45%;
+}
+.registerBody .form .logo{
+    height: 5em;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1.5em;
+}
+#time{
+    display: none;
+    width: 80%;
+    margin-left: 10%;
+    height: 1.5em;
+    padding: 0;
+    border: 1px solid black;
+    margin-bottom:2em;
+}
+form .cartIcon{
+    color:white;
+    font-size:1.25em ;
+    border: none;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+/* menu styling */
+.mainMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.mainMenu .logoPhoto{
+    width: 15%;
+    margin-top: 15%;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+.mainMenu .logoPhoto img{
+    width: 80%;
+    margin-left: 10%;
+}
+.mainMenu .cart{
+    width: 10%;
+}
+.mainMenu .gallery{
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.mainMenu .card{
+    background: #374440;
+    color: white;
+    width: 90%;
+    margin-top: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+.mainMenu .card .cartIcon{
+    background: #902124;
+    width:3em;
+    height:3em;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+
+.mainMenu .card .next{
+    font-size: 3em;
+    height: 30%;
+    margin-top:25%;
+}
+.mainMenu .card img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1em;
+}
+.mainMenu .card p, .mainMenu .card h6, .mainMenu .cart p {
+    font-size: 1.1em;
+    margin: 0.5em;
+}
+
+.mainMenu .cart input {
+    font-weight: lighter;
+    font-size: 0.9em;
+    margin: 0.5em;
+    border: none;
+    width: 60%;
+    margin-left: 10%;
+    height: 1.5em;
+    padding: 0;
+}
+#pay{
+    display: none;
+}
+.mainMenu .cart #pay input[type=number]{
+    border-bottom: 2px solid black;
+    width: 80%;
+    margin-left: 10%;
+}
+.cart #locationPin{
+    display: none;
+}
+.mainMenu .cart i{
+    margin-left: 2%;
+}
+.mainMenu .cart .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em;
+}
+.mainMenu .cart a{
+    text-decoration: none;
+    color: black;
+}
+.mainMenu .cart{
+    background: #ffffff;
+    color: #000000;
+    font-size: 0.em;
+    padding: 0.25em;
+    width: 10em;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 2em;
+}
+.mainMenu .cart .btn, .btn{
+    background: black;
+    color: white;
+    width: 7em;
+    border-radius: 5px;
+    height: 2em;
+    padding: 0.25em;
+    margin-top: 1em;
+    margin-left: 5%;
+}
+.bottom .restaurant img{
+    width:3.5em;
+    height:3.5em;
+    border-radius: 50%;
+    margin-top: 0;
+
+}
+.mainMenu .restaurant img{
+    width:3em;
+    height:3em;
+    border-radius: 50%;
+    margin-top: 0;
+
+}
+#uploadMenu, #uploadMenu2{
+    display: none;
+}
+.registerBody .menuTitle{
+    font-size: 1.5em;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#uploadMenu2{
+    margin-left: 5%;
+}
+.action{
+    display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+}
+
+.card .action .cartIcon{
+    background: #902124;
+    width:3em;
+    height:3em;
+    border-radius: 0;
+    margin-top: 5%;
+    border-left: 2px solid white;
+}
+.action .pencil .cartIcon{
+    border: none;
+}
+.bottom a i{
+    font-size: 2em;
+    margin-top: 50%;
+}
+.cart span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left:20%;
+}
+.mainMenu .cart span input{
+    margin: 0;
+    padding: 0;
+    height: 1em;
+    margin-top: 1.5em;
+}
+@media only screen and (max-width: 1075px){
+.searchBar{
+    width: 50%;
+    margin-left: 15%;
+}
+.searchBar input{
+    width: 75%;
+}
+}
+@media only screen and (max-width: 890px){
+.mainMenu .gallery{
+    width: 100%;
+}
+.mainMenu{
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 0;
+}
+.mainMenu .logoPhoto{
+    width: 50%;
+    margin-left: 25%;
+    flex-direction: row;
+    height: 10%;
+}
+.mainMenu .logoPhoto img{
+    height: 6em;
+    width: 6em;
+    margin-right: 1em;
+}
+.mainMenu .logoPhoto h1{
+    width: 10%;
+}
+}
+@media only screen and (max-width: 610px){
+    .mainMenu .gallery{
+        grid-template-columns: auto auto;
+    }
+    .searchBar{
+        width: 65%;
+        margin-left: 5%;
+    }
+    .mainMenu .logoPhoto{
+        width: 80%;
+        margin-left: 5%;
+    }
+    .mainMenu .card .cartIcon{
+        width: 2em;
+        height: 2em;
+        margin-left: 40%;
+        margin-bottom: 10%;
+    }
+    .homeBody .body .CTA .cartIcon{
+        width: 3.5em;
+        height: 3.5em;
+        margin-left: 10%;
+        margin-bottom: 20%;
+        margin-top: 0;
+    }
+    .mainMenu .card .cartIcon i{
+        margin-top: 0.5em;
+    }
+    .registerBody .form{
+        margin-top: 10%;
+    }
+    .registerBody .formDiv{
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+    
+    }
+    .registerBody .formDiv div{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .registerBody .form .btn{
+        margin-left: 37.5%;
+    }
+    .header{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 350px){
+    .mainMenu .logoPhoto h1{
+        font-size: 1.5em;
+    }
+    .mainMenu .logoPhoto{
+        width: 80%;
+        margin-left: 0;
+    }
+}
+/* orders page styling */
+.orders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.listTitle{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.25em;
+    margin-top: 2em;
+}
+.list{
+    width: 75%;
+}
+.orders .card{
+    background: #374440;
+    color: white;
+    width: 90%;
+    height:fit-content;
+    /* margin-left: 5%; */
+    margin-top: 1em;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.orders .card img{
+    width: 15%;
+    height: 80%;
+    margin-left:0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.orders .cart p {
+    font-size: 1.1em;
+    margin: 0.5em;
+}
+.orders .cart p, .orders .cart h6 {
+    font-size: 0.9em;
+    margin: 0.5em;
+    margin-right: 0;
+}
+.orders .cart h6 {
+    font-weight: lighter;
+}
+.orders .cart{
+    background: #ffffff;
+    color: #000000;
+    font-size: 0.em;
+    padding: 0.25em;
+    width:15%;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+.orders .cart .btn{
+    background: black;
+    color: white;
+    width: 7em;
+    border-radius: 5px;
+    height: 3em;
+    padding: 0.25em;
+    margin-top: 1em;
+    margin-left: 20%;
+}
+.contactsTitle{
+    text-align: center;
+    font-size: 2em;
+}
+.contactBody{
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+}
+.contactBody div{
+    width: 45%;
+    margin-left: 5%;
+    text-align: left;
+}
+.contactBody h6{
+    font-size: 1.1em;
+}
+.contactBody h5{
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+}
+.contacts h5{
+    text-align: left;
+}
+.contactBody i{
+    margin-right: 2em;
+}
+.contactBody a{
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 890px){
+    .contactBody{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .contactBody div{
+        width: 90%;
+        margin-left: 5%;
+        text-align: left;
+        margin-bottom: 5%;
+    }
+    .contactBody h5{
+        text-align: left;
+    }
+    .orders{
+        flex-direction: column;
+    }
+    .orders .card{
+        width: 100%;
+    }
+    .list{
+        width: 90%;
+        margin-left: 2%;
+    }
+    .orders .cart{
+        width: 89%;
+        margin-left: 6.5%;
+    }
+    .orders .cart .btn{
+        margin-left: 0%;
+    }
+}
+.allOrders{
+    width: 80%;
+    margin-left: 5%;
+}
+.allOrders table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+.allOrders table th, .allOrders table td{
+    padding: 1%;
+    border: 1px solid black;
+}
+.passwordArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14em;
+}
+#hidePassword, #hidePassword1{
+    display: none;
+}
+.passwordArea span{
+    margin-top: 20%;
+    margin-right: 20%;
+}
+#passwordChecker{
+    width: 14em;
+    font-size: 0.9em;
+}
+#print{
+    float:right;
+}
+.receipt{
+    width: 40%;
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-left: 5%;
+    box-shadow: #000000;
+    font-size: 1.2em;
+    border: 2px solid black;
+}
+.receipt h5{
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.receipt h6{
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.receipt .head{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    height: 5em;
+}
+.receipt img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin: 1.5em;
+    margin-bottom: 0;
+    margin-left: 20%;
+}
+.receipt .info{
+    margin-bottom: 2em;
+}
+#printBtn{
+    margin-left: 20%;
+}
+.searchBar form{
+    background: transparent;
+}
+.registrationPrompt{
+    position: fixed; /* Sit on top of the page content */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    padding-top: 10%;
+}
+.registrationPrompt h5, .registrationPrompt div{
+    margin-left: 35%;
+    margin-bottom: 10%;
+    color: white;
+    font-size: 1.5em;
+    /* text-align:  center; */
+}
+#restaurantForm, #clientForm{
+    display: none;
+}
+.registrationPrompt h5{
+    margin-left: 42%;
+}
+.registrationPrompt button{
+    width: 10em;
+    height: 3em;
+    border: 2px solid white;
+}
+.registrationPrompt .client{
+    background: transparent;
+}
+.profileName{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+.profileName img{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+.registerBody .header h5{
+    margin-top: 0.5em;
+}
+.createAccount 
+{
+    font-size: 1.5em;
+    margin-left: 40%;
+}
+.createAccount a{
+    text-decoration: none;
+    color: black;
+}
